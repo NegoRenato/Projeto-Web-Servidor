@@ -1,0 +1,16 @@
+										Projeto de um Sistema Escolar
+
+Um projeto simples que simula um sistema escolar de Aluno/Professor. Onde o Sistema deve ter as seguintes funcionalidades.
+
+	Lado do Aluno
+
+Registrar Aluno: Deve ser possivel fazer um registro de um aluno a o sistema onde ele deve conter nome de usuario e senha para login.
+Login de Aluno: Deve ser possivel o aluno logar no Sistema.
+Verificar Status do aluno: Deve ser possivel o aluno verificar os status dele como. Provas feitas, notas de cada prova, nota final, situação, e faltas.
+
+	Lado do Professor
+
+Registrar Professor: Deve ser possivel fazer um registro de um professor ao sistema onde ele deve conter nome de usuario e senha.
+Login de Professor Deve ser possivel o aluno logar no sistema.
+Dar falta: deve ser possivel o professor dar falta a um aluno.
+Dar Nota: deve ser possivel o professor dar nota a um aluno.
