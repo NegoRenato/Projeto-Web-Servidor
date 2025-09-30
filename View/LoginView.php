@@ -8,6 +8,9 @@
 </head>
 <body>
     <main>
+        <form id="voltar" action="LoginController.php" method="get">
+            <input class="botao" type="submit" name="voltarLogin" value="pagina inicial">
+        </form>
         <h2>Login Aluno</h2>
         <form id="login" action="LoginController.php" method="post">
             <label for="usuario">Usuario: <input class="caixa-texto" type="text" name="usuario"></label>
@@ -16,9 +19,6 @@
             <?php if (!empty($mensagem_erro)) : ?>
                 <p style="color: red;"><?php echo $mensagem_erro; ?></p>
             <?php endif; ?>
-        </form>
-        <form id="voltar" action="LoginController.php" method="get">
-            <input class="botao" type="submit" name="voltarLogin" value="pagina inicial">
         </form>
     </main>
 </body>

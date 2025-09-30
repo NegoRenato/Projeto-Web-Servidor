@@ -19,16 +19,16 @@ main{
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 2.5%;
-    padding: 2.5%;
     align-items: center;
 }
 
 h2{
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-form{
-    padding: 20px;
+#formulario{
+    padding: 30px;
 }
 
 .botao{
@@ -39,6 +39,14 @@ form{
   cursor: pointer;
   width: 250px;
   padding: 20px;
+}
+
+#botaoVoltar{
+    align-self: flex-start;
+}
+
+#botaoVoltar > .botao{
+    width: 200px
 }
 
 .caixa-texto{

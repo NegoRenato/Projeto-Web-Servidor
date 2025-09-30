@@ -15,12 +15,12 @@
             
             foreach ($_SESSION['alunos'] as $aluno) {
                 if ($aluno['usuario'] == $_POST['usuario'] && $aluno['senha'] == $_POST['senha']) {
-                    $login_sucesso = true;
+                    $loginSucesso = true;
                     break; 
                 }
             }
 
-            if ($login_sucesso) {
+            if ($loginSucesso) {
                 header('Location: ./AlunoController.php');
                 exit();
             } else {

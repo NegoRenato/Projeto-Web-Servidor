@@ -8,8 +8,11 @@
 </head>
 <body>
     <main>
+        <form id="botaoVoltar" action="CadastrarController.php" method="get">
+            <input class="botao" type="submit" name="voltarCadastrar" value="Voltar para pagina inicial">
+        </form>
         <h2>Cadastro Aluno</h2>
-        <form action="CadastrarController.php" method="post">
+        <form id="formulario" action="CadastrarController.php" method="post">
             <label for="1">Nome:<input class="caixa-texto" type="text" name="nome" id="1"><br><br></label>
             <label for="2">Data de Nascimento: <input type="date" name="dataNascimento" id="2"><br><br></label>
             <label for="3">nome de usuario: <input class="caixa-texto" type="text" name="usuario" id="3"><br><br></label>
@@ -19,9 +22,9 @@
         <?php if (!empty($mensagemErro)) : ?>
             <p style="color: red;"><?php echo $mensagemErro; ?></p>
         <?php endif; ?>
-        <form action="CadastrarController.php" method="get">
-            <input class="botao" type="submit" name="voltarCadastrar" value="Voltar para pagina inicial">
-        </form>
+        <?php if (!empty($mensagemCadastro)) : ?>
+            <p style="color: green;"><?php echo $mensagemCadastro; ?></p>
+        <?php endif; ?>
     </main>
 </body>
 </html>
