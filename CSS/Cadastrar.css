@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: lightgray;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2.5%;
+    padding: 2.5%;
+    align-items: center;
+}
+
+h2{
+    padding-bottom: 20px;
+}
+
+form{
+    padding: 20px;
+}
+
+.botao{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  width: 250px;
+  padding: 20px;
+}
+
+.caixa-texto{
+    padding: 12px;
+    width: 100%;
+}

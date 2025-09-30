@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/PaginaInicial.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <h1>Sistema escolar faker</h1>   
+    </section>
+    <section>
+        <form class="formulario" action="index.php" method="get">
+        <input class="botao" type="submit" name="cadastrarAluno" value="CADASTRAR ALUNO">
+        </form>
+        <form action="index.php" method="get">
+        <input class="botao" type="submit" name="cadastrarProf" value="CADASTRAR PROFESSOR">
+        </form>
+        <form action="index.php" method="get">
+        <input class="botao" type="submit" name="LoginAluno" value="LOGIN ALUNO">
+        </form>
+        <form action="index.php" method="get">
+        <input class="botao" type="submit" name="LoginProf" value="LOGIN PROFESSOR">
+        </form> 
+    </section>
+</body>
+</html>
