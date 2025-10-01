@@ -20,7 +20,7 @@ Pagina Segura do Professor: A pagina segura do Professor contera tres informaç�
 
 Instalação
 
- Para instalar a aplicação, deve criar uma pasta no diretorio C:\xampp\htdocs, e transferir os arquivos do meu diretorio git para a pasta criada.
+ Para instalar a aplicação, deve ter instalado o xampp e o mysql, e deve criar uma pasta no diretorio C:\xampp\htdocs, e transferir os arquivos do meu diretorio git para a pasta criada, apos criado a pasta, a pagina deve executar o link http://localhost/nomeda-pasta-que-o-usuario-criou/index.php.
 
 Minha Parte do trabalho
 
