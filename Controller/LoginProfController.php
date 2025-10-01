@@ -1,25 +1,23 @@
 <?php
     session_start();
 
-    if (!isset($_SESSION['alunos'])) {
-    require('../Model/Aluno.php');
-    $_SESSION['alunos'] = $Alunos;
-}
+    if (!isset($_SESSION['professores'])) {
+        require('../Model/Professor.php');
+        $_SESSION['professores'] = $Professores;
+    }
 
     $mensagemErro = "";
     $loginSucesso = false;
 
-    if(!empty($_SESSION['alunoLogado']) && $_SESSION['alunoLogado']) {
-        header('Location: ./AlunoController.php');
-        exit();
+    if(!empty($_SESSION['profLogado']) && $_SESSION['profLogado']) {
+            header('Location: ./ProfController.php');
+            exit();
     }
-
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        
         if (!empty($_POST['usuario']) && !empty($_POST['senha'])) {
             
-            foreach ($_SESSION['alunos'] as $aluno) {
-                if ($aluno['usuario'] == $_POST['usuario'] && $aluno['senha'] == $_POST['senha']) {
+            foreach ($_SESSION['professores'] as $professor) {
+                if ($professor['usuario'] == $_POST['usuario'] && $professor['senha'] == $_POST['senha']) {
                     $loginSucesso = true;
                     $_SESSION['usuario'] = $_POST['usuario'];
                     break; 
@@ -27,9 +25,9 @@
             }
 
             if ($loginSucesso) {
-                $_SESSION['alunoLogado'] = true;
-                $_SESSION['profLogado'] = false;
-                header('Location: ./AlunoController.php');
+                $_SESSION['profLogado'] = true;
+                $_SESSION['alunoLogado'] = false;
+                header('Location: ./ProfController.php');
                 exit();
             } else {
                 $mensagem_erro = "Nome de usuário ou senha inválido!";
@@ -44,4 +42,4 @@
         header('location: ../index.php');
     }
 
-    require('../View/LoginView.php');
+    require('../View/LoginProfView.php');

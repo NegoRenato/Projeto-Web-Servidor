@@ -24,6 +24,9 @@
         <form action="index.php" method="get">
         <input class="botao" type="submit" name="LoginProf" value="LOGIN PROFESSOR">
         </form> 
+        <form action="index.php" method="get">
+        <input class="botao" type="submit" name="Logout" value="LOGOUT">
+        </form>
     </section>
 </body>
 </html>

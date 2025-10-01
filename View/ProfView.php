@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Seja Bem vindo aluno: <?= $_SESSION["usuario"]?></h1>
-    <form action="AlunoController.php" method="get">
+    <h1>Seja Bem vindo professor: <?= $_SESSION["usuario"]?></h1>
+    <form action="ProfController.php" method="get">
         <input type="submit" name="boletim" value="consultarBoletim">
         <input type="submit" name="dadosAluno" value="consultar Dados do Aluno">
         <input type="submit" name="Prova" value="realizar Prova">

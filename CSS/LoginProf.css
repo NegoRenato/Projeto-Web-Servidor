@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24.5%;
+    margin-top: 10%;
+    flex-direction: column;
+    width: 50%;
+    height: 430px;
+    background-color: lightgray;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.botao{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.caixa-texto{
+    padding: 12px;
+    width: 100%;
+}
+
+#voltar{
+    align-self: flex-start;
+
+}
