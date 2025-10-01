@@ -11,6 +11,15 @@
         $_SESSION['professores'] = $Professores;
     }
 
+    if(!empty($_SESSION['alunoLogado']) && $_SESSION['alunoLogado']) {
+        header('Location: ./Controller/AlunoController.php');
+        exit();
+    }
+
+    if(!empty($_SESSION['profLogado']) && $_SESSION['profLogado']) {
+            header('Location: ./Controller/ProfController.php');
+            exit();
+    }
 
     $cadastroAluno = false;
     $loginAluno = false;
@@ -28,9 +37,5 @@
     }
     if(!empty($_GET['LoginAluno'])){
         $loginAluno = true;
-    }
-    if(!empty($_GET['Logout'])){
-        $_SESSION['alunoLogado'] = false;
-        $_SESSION['profLogado'] = false;
     }
     require('./View/PaginaInicial.php');

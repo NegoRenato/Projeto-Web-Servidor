@@ -9,10 +9,6 @@
     $mensagemErro = "";
     $loginSucesso = false;
 
-    if(!empty($_SESSION['profLogado']) && $_SESSION['profLogado']) {
-            header('Location: ./ProfController.php');
-            exit();
-    }
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!empty($_POST['usuario']) && !empty($_POST['senha'])) {
             

@@ -9,11 +9,6 @@
     $mensagemErro = "";
     $loginSucesso = false;
 
-    if(!empty($_SESSION['alunoLogado']) && $_SESSION['alunoLogado']) {
-        header('Location: ./AlunoController.php');
-        exit();
-    }
-
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         if (!empty($_POST['usuario']) && !empty($_POST['senha'])) {

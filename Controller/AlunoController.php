@@ -9,4 +9,10 @@
         require('../Model/Aluno.php');
         $_SESSION['alunos'] = $Alunos;
     }
+
+    if(!empty($_GET['Logout'])){
+        $_SESSION['alunoLogado'] = false;
+        $_SESSION['profLogado'] = false;
+        header('Location: ../index.php');
+    }
 ?>
