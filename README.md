@@ -20,4 +20,12 @@ Pagina Segura do Professor: A pagina segura do Professor contera tres informaç�
 
 Instalação
 
-Para instalar a aplicação, deve apenas fazer
+ Para instalar a aplicação, deve criar uma pasta no diretorio C:\xampp\htdocs, e transferir os arquivos do meu diretorio git para a pasta criada.
+
+Minha Parte do trabalho
+
+ Fui responsavel por criar a logica de login e de cadastro de Aluno, e os caminhos do arquivo que leva de uma pagina para outra.
+
+ Parte do Flavio Cesar
+
+ Foi responsavel por criar a logica de de manter Login de Professor e Aluno, fazendo com que caso o usuario tivesse uma session de logado, e ele caso ele saia da pagina segura sem deslogar, faz com que o usuario volte para a pagina segura. E pela logica de que caso um usuario tente acessar a pagina segura atraves de um link, fazer com que ele seja redirecionado para a pagina de login.
