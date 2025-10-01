@@ -6,6 +6,12 @@
         $_SESSION['alunos'] = $Alunos;
     }
 
+    if (!isset($_SESSION['professores'])) {
+        require('./Model/Professor.php');
+        $_SESSION['professores'] = $Professores;
+    }
+
+
     $cadastroAluno = false;
     $loginAluno = false;
     $loginProfessor = false;
@@ -22,5 +28,9 @@
     }
     if(!empty($_GET['LoginAluno'])){
         $loginAluno = true;
+    }
+    if(!empty($_GET['Logout'])){
+        $_SESSION['alunoLogado'] = false;
+        $_SESSION['profLogado'] = false;
     }
     require('./View/PaginaInicial.php');
