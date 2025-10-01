@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(empty($_SESSION['profLogado']) || $_SESSION['profLogado'] == false) {
-        header('location: ./Controller/LoginProfController.php');
+        header('location: ./LoginProfController.php');
     }
     require('../View/ProfView.php');
     
